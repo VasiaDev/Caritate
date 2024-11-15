@@ -14344,7 +14344,7 @@ object {
 .section-tittle .pera {
   color: var(--primary-title);
   font-size: 16px;
-  font-family: var(--Druk);
+  font-family: var(--SF);
 }
 .section-tittle .pera a {
   text-decoration: underline;
@@ -19881,10 +19881,10 @@ input[type=number] {
   }
 }
 .urgent-area .image-right-card {
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 440px;
   padding: 46px 20px;
-  background-color: var(--primary);
+  background-image: var(--primary);
   border-radius: 0px 10px 10px 0px;
 }
 @media (max-width: 991px) {
@@ -19914,7 +19914,7 @@ input[type=number] {
   }
 }
 .urgent-area .image-right-card .title {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   font-weight: 700;
   margin-bottom: 15px;
@@ -19928,7 +19928,7 @@ input[type=number] {
 }
 .urgent-area .image-right-card .subtitle {
   font-size: 16px;
-  color: var(--info);
+  color: var(--white);
   font-weight: 400;
   text-align: center;
   margin-bottom: 24px;
@@ -19962,7 +19962,7 @@ input[type=number] {
 .urgent-area .image-right-card .charges .pera {
   font-size: 15px;
   font-weight: 600;
-  color: var(--secondary);
+  color: var(--pure-black);
 }
 .urgent-area .image-right-card .tab-section-two {
   display: none;
@@ -19970,7 +19970,7 @@ input[type=number] {
 .urgent-area .image-right-card .forward-btn {
   width: 40px;
   height: 40px;
-  background-color: var(--secondary);
+  background-color: var(--pure-black);
   border: 1px solid var(--primary);
   border-radius: 10px;
   display: -webkit-box;
@@ -19985,17 +19985,19 @@ input[type=number] {
 }
 .urgent-area .image-right-card .forward-btn i {
   font-size: 20px;
-  color: var(--primary-title);
+  color: var(--white);
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 .urgent-area .image-right-card .forward-btn:hover {
   cursor: pointer;
-  background-color: transparent;
-  border: 1px solid var(--secondary);
+  background-color: var(--white);
+  border: 1px solid var(--tertiary);
 }
 .urgent-area .image-right-card .forward-btn:hover i {
-  color: var(--white);
+  background-image: var(--primary);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 .urgent-area .image-right-card .tab-btn {
   background-color: white;
@@ -20049,7 +20051,8 @@ input[type=number] {
   color: var(--primary-title);
 }
 .urgent-area .image-right-card .urgent-tab.active {
-  background-color: var(--secondary);
+  background-color: var(--pure-black);
+  color: var(--white);
 }
 
 .urgent-area-slide {
@@ -20178,6 +20181,7 @@ input[type=number] {
 .question-area .accordion-body {
   padding-top: 0;
   font-size: 16px;
+  font-family: var(--SF);
 }
 @media (max-width: 767px) {
   .question-area .accordion-body {
@@ -20212,6 +20216,7 @@ input[type=number] {
   font-size: 16px;
   font-weight: 600;
   color: var(--primary-title);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
 }
 @media (max-width: 767px) {
   .question-area .accordion-item .accordion-button {
@@ -25329,12 +25334,13 @@ input[type=number] {
   border-radius: 5px;
 }
 .custom-progress .progress-bar {
-  background-color: var(--secondary);
+  background-color: var(--pure-black);
   position: relative;
   overflow: visible;
   border-radius: 5px;
 }
 .custom-progress .progress-bar .pera {
+  font-family: var(--Inter);
   position: absolute;
   top: -30px;
   left: 100%;
